@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono de la marca-->
+    <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon"><!--En el # va la imagen q tenga guardada en la carpeta-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>AnimeInfo-Contacto</title>
+</head>
+<body class="body-contacto">
+    <nav class="navegacion">
+        <div class="navbar">
+            <a href="../index.html"><img src="../assets/icons/logo.png" alt="logo-animeinfo" width="50px"></a>
+        <!--Links a mis paginas-->
+        <!--Listas desordenada-->
+            <ul>
+            <!--Enlaces Relativos-->
+                <!--<li><a href="../index.html">Inicio</a></li>-->
+                <li><a href="./explorar.html">Explorar</a></li>
+                <li><a href="./noticias.html">Noticas</a></li>
+                <li><a href="./reomendaciones.html">Recomendaciones</a></li>
+                <li><a href="./info.html">Info</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="contenedor">
+            <form action="" class="form">
+                <div class="form-header">
+                <h1 class="form-title"> C<span>ontacto</span></h1>
+                </div>
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" class="form-input" placeholder="Nombre">
+
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" id="apellido" class="form-input" placeholder="Apellido">
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" id="email" class="form-input" placeholder="ejemplo@servidor.com">
+
+                <label for="mensaje" class="form-label">Comentario</label>
+                <textarea id="mensaje" class="form-text" placeholder="Deje su mensaje aquí"></textarea>
+                <input type="submit" class="boton-submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+
+    <!--Formulario de contacto
+    <form class="formulario" action="procesar.php" name="contacto" method="post">
+        <fieldset>
+            <legend class="contacto">Contacto</legend>
+                <input type="text" name="nombre" placeholder="Nombre"required>
+                <input type="text" name="apellido" placeholder="Apellido"required>
+                <input type="email" name="correo" placeholder="ejemplo@servidor.com"required>
+                <textarea name="comentario" cols="30" rows="10" placeholder="Dejenos su comentario aqui"></textarea>
+                <button type="submint" id="boton">Enviar</button>
+
+        </fieldset>
+    </form>-->
+
+    <footer id="footer-contacto">
+        <article>
+            <h4 class="footer-text1">Desarrollador por Frossasco Emanuel</h4>
+            <h4 class="footer-text2">Seguinos en nuestras redes</h4>
+        </article>
+        <article class="resdessociales">
+            <img class="redes" src="../assets/icons/facebook1.png" alt="Facebook" width="30px">
+            <img class="redes" src="../assets/icons/instagram.png" alt="Instagram" width="30px">
+            <img class="redes" src="../assets/icons/twitter.png" alt="Twitter" width="30px">
+        </article>
+    </footer>
+</body>
+</html>

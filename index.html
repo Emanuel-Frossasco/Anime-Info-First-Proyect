@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono de la marca-->
+    <link rel="shortcut icon" href="./assets/icons/logo.png" type="image/x-icon"><!--En el # va la imagen q tenga guardada en la carpeta-->
+    <!--Hoja de Estilos de manera externa-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>AnimeInfo-Home</title>
+</head>
+<body class="body-home">
+    <nav class="navegacion">
+        <!--Para que al apretar el logo me mande al home-->
+        <div class="navbar">
+            <a href="./index.html"><img src="./assets/icons/logo.png" class="logo-nav" alt="logo-animeinfo" width="50px"></a>
+        <!--Links a mis paginas-->
+        <!--Listas desordenada-->
+            <ul>
+            <!--Enlaces Relativos-->
+                <!--<li><a href="./index.html">Inicio</a></li>-->
+                <li><a href="./pages/explorar.html">Explorar</a></li>
+                <li><a href="./pages/noticias.html">Noticas</a></li>
+                <li><a href="./pages/reomendaciones.html">Recomendaciones</a></li>
+                <li><a href="./pages/info.html">Info</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <!--Cabecera-->
+    <header>
+        <!--Imgane header-->
+        <p class="centrado-destacado">
+        <a href="./pages/noticias.html"><img class="zoom-destacado" src="./assets/img/Temporada2022.jpg" alt="Destacado" width="800px" ></a>
+        </p>
+        <!--Lista Ordenadas-->
+        <!--<ol>
+            <li>Spy x Family</li>
+            <li>Temporada de Verano 2022</li>
+            <li>Kaguya-sama love us war</li>
+            <li>Love after world domination</li>
+            <li>Ao Ashi</li>
+        </ol>-->
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h1 class="font-destacados1">Destacado de la semana</h1>
+            </article>
+            <div class="slider">
+                <ul >
+                    <li id="slide1"><a href="./pages/info.html"><img src="./assets/img/spyxfamily.png" alt="Spy-x-Family" width="700px" height="350px"></a></li>
+                    <li id="slide2"><a href="./pages/info.html"><img src="./assets/img/shieldhero.png" alt="The-Rising-of-the-shield-hero" width=700px" height="350px"></a></li>
+                    <li id="slide3"><a href="./pages/info.html"><img src="./assets/img/kaguya-sama.png" alt="Kaguya-sama-Love-is-War" width="700px" height="350px"></a></li>
+                    <li id="slide4"><a href="./pages/info.html"><img src="./assets/img/thelastsummoner.png" alt="The-Last-Summoner" width="700px" height="350px"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--<section>
+            <h1  class="font-destacados1">Temporada 2022</h1>
+            Video iframe
+            <div class="video">
+                <iframe  width="560" height="315" src="https://www.youtube.com/embed/9_cX8ecPYO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        Lista ANIDADAS-->
+        <section>
+            <article class="recomendaciones">
+                <h2 class="subrecomendaciones">Recomendaciones</h2>
+                    <h4 class="texto">Paginas de animes mas vistada por la gente para ver estas series y mas.</h4>
+                        <a  href="https://beta.crunchyroll.com/es" target="_blank"><img class="zoom" src="./assets/icons/Crunchyroll" alt="Crunchyroll" width="50px"></a> <!--Colocar imagen-->
+                        <a  href="https://www.funimation.com" target="_blank"><img class="zoom" src="./assets/icons/funimation.png" alt="Funimation" width="50px"></a>    <!--Colocar imagen-->
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <article>
+            <h4>Desarrollador por Frossasco Emanuel</h4>
+            <h4>Seguinos en nuestras redes</h4>
+        </article>
+
+        <article class="resdessociales">
+            <img class="redes" src="./assets/icons/facebook1.png" alt="Facebook" width="30px">
+            <img class="redes" src="./assets/icons/instagram.png" alt="Instagram" width="30px">
+            <img class="redes" src="./assets/icons/twitter.png" alt="Twitter" width="30px">
+        </article>
+    </footer>
+</body>
+</html>
