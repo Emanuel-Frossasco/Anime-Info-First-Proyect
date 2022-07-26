@@ -13,14 +13,9 @@
 body{
     background-color: rgb(19, 19, 19);
 }
-
 /*Medidas*/
 html{
     font-size: 20px;
-}
-/*Medidas Relativas*/
-p{
-    font-family: "/*Nombre de la tipografia*/", sans-serif;
 }
 /*Barra de navegacion*/
 .navegacion{
@@ -235,13 +230,94 @@ nav ul li a{
 }
 
 /*Footer*/
+.footer{
+    width: 100%;
+    background: rgba(0, 0, 0, .65);
+}
+.footer .grupo-1{
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.footer .grupo-1 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .grupo-1 .box h4{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.footer .grupo-1 .box h4{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.footer .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+
+.footer1{
+    width: 100%;
+    background: rgba(0, 0, 0, .65);
+    background-position: center;
+    margin-top: auto;
+    bottom: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer1 .grupo-1{
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.footer1 .grupo-1 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer1 .grupo-1 .box h4{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.footer1 .grupo-1 .box h4{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.footer1 .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+
+
+
 #footer-contacto{
     width: 100%;
     background: rgba(0, 0, 0, .7);
     font-family: 'Roboto', sans-serif;
     color: #f29718;
     padding: 20px 20px;
-    background-image: url('../assets/backgrounds/#');
     background-size: cover;
     display: flex;
     background-position: center;
@@ -256,7 +332,6 @@ nav ul li a{
     background-color: black;
     color: #f29718;
     padding: 15px 15px;
-    background-image: url('../assets/backgrounds/#');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -265,6 +340,8 @@ nav ul li a{
 }
 .redes{
     border-radius: 9px;
+    margin-right: 25px;
+    text-align: center;
 }
 .footer-text1{
     text-align: left;
@@ -474,6 +551,13 @@ nav ul li a{
     /*Contacto*/
     .contenedor{
         flex-direction: column;
+    }
+    /*Footer*/
+    .footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
     }
 }
 
