@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Icono de la marca-->
     <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon"><!--En el # va la imagen q tenga guardada en la carpeta-->
     <link rel="stylesheet" href="../css/estilos.css">
@@ -28,7 +29,7 @@
     </nav>
 
     <main>
-        <div class="contenedor">
+        <div data-aos="zoom-in-left" class="contenedor">
             <form action="" class="form">
                 <div class="form-header">
                 <h1 class="form-title"> C<span>ontacto</span></h1>
@@ -49,19 +50,6 @@
         </div>
     </main>
 
-    <!--Formulario de contacto
-    <form class="formulario" action="procesar.php" name="contacto" method="post">
-        <fieldset>
-            <legend class="contacto">Contacto</legend>
-                <input type="text" name="nombre" placeholder="Nombre"required>
-                <input type="text" name="apellido" placeholder="Apellido"required>
-                <input type="email" name="correo" placeholder="ejemplo@servidor.com"required>
-                <textarea name="comentario" cols="30" rows="10" placeholder="Dejenos su comentario aqui"></textarea>
-                <button type="submint" id="boton">Enviar</button>
-
-        </fieldset>
-    </form>-->
-
     <footer id="footer-contacto">
         <article>
             <h4 class="footer-text1">Desarrollador por Frossasco Emanuel</h4>
@@ -73,5 +61,9 @@
             <img class="redes" src="../assets/icons/twitter.png" alt="Twitter" width="30px">
         </article>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

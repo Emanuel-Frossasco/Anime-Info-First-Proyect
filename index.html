@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Icono de la marca-->
     <link rel="shortcut icon" href="./assets/icons/logo.png" type="image/x-icon"><!--En el # va la imagen q tenga guardada en la carpeta-->
     <!--Hoja de Estilos de manera externa-->
     <link rel="stylesheet" href="./css/estilos.css">
     <title>AnimeInfo-Home</title>
 </head>
-<body class="body-home">
+<body>
     <nav class="navegacion">
         <!--Para que al apretar el logo me mande al home-->
         <div class="navbar">
@@ -29,46 +30,20 @@
         </div>
     </nav>
 
-        <!--Cabecera-->
-    <header>
-        <!--Imgane header-->
-        <p class="centrado-destacado">
-        <a href="./pages/noticias.html"><img class="zoom-destacado" src="./assets/img/Temporada2022.jpg" alt="Destacado" width="800px" ></a>
-        </p>
-        <!--Lista Ordenadas-->
-        <!--<ol>
-            <li>Spy x Family</li>
-            <li>Temporada de Verano 2022</li>
-            <li>Kaguya-sama love us war</li>
-            <li>Love after world domination</li>
-            <li>Ao Ashi</li>
-        </ol>-->
-    </header>
-
     <main>
-        <section>
+        <section class="contenedor__home">
             <article>
-                <h1 class="font-destacados1">Destacado de la semana</h1>
+                <a href="./pages/noticias.html"><img class="contenedor__img" src="./assets/img/Temporada2022.jpg" alt="Destacado" width="800px" ></a>
             </article>
             <div class="slider">
-                <ul >
+                <ul>
                     <li id="slide1"><a href="./pages/info.html"><img src="./assets/img/spyxfamily.png" alt="Spy-x-Family" width="700px" height="350px"></a></li>
                     <li id="slide2"><a href="./pages/info.html"><img src="./assets/img/shieldhero.png" alt="The-Rising-of-the-shield-hero" width=700px" height="350px"></a></li>
                     <li id="slide3"><a href="./pages/info.html"><img src="./assets/img/kaguya-sama.png" alt="Kaguya-sama-Love-is-War" width="700px" height="350px"></a></li>
                     <li id="slide4"><a href="./pages/info.html"><img src="./assets/img/thelastsummoner.png" alt="The-Last-Summoner" width="700px" height="350px"></a></li>
                 </ul>
             </div>
-        </section>
 
-        <!--<section>
-            <h1  class="font-destacados1">Temporada 2022</h1>
-            Video iframe
-            <div class="video">
-                <iframe  width="560" height="315" src="https://www.youtube.com/embed/9_cX8ecPYO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-        Lista ANIDADAS-->
-        <section>
             <article class="recomendaciones">
                 <h2 class="subrecomendaciones">Recomendaciones</h2>
                     <h4 class="texto">Paginas de animes mas vistada por la gente para ver estas series y mas.</h4>
@@ -90,5 +65,9 @@
             <img class="redes" src="./assets/icons/twitter.png" alt="Twitter" width="30px">
         </article>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
