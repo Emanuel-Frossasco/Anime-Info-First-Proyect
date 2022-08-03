@@ -5,77 +5,229 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
-    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Icono de la marca-->
     <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon"><!--En el # va la imagen q tenga guardada en la carpeta-->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>AnimeInfo-Explorar</title>
 </head>
-    <body>
-        <nav class="navegacion">
-            <div class="navbar">
-                <a href="../index.html"><img src="../assets/icons/logo.png" alt="logo-animeinfo" width="50px"></a>
-            <!--Links a mis paginas-->
-            <!--Listas desordenada-->
-                <ul>
-            <!--Enlaces Relativos-->
-                    <!--<li><a href="../index.html">Inicio</a></li>-->
-                    <li><a href="./explorar.html">Explorar</a></li>
-                    <li><a href="./noticias.html">Noticas</a></li>
-                    <li><a href="./reomendaciones.html">Recomendaciones</a></li>
-                    <li><a href="./info.html">Info</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+    <body class="body01">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/icons/logo.png" class="logo-nav" alt="logo-animeinfo" width="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./explorar.html">Explorar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reomendaciones.html">Recomendaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./info.html">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <main>
+            </div>
                 <div data-aos="zoom-in-up" class="explorar__imgs">
                     <h3 class="explorar__titulo">Popular</h3>
                     <img class="explorar__divisor" src="../assets/img/divisor.png" alt="divisor">
-                    <a class="explorar__img" href="./info.html"><img src="../assets/img/shield-hero2.png" alt="Shield Hero 2" width="150px" height="230"></a>
-                    <a class="explorar__img" href="./info.html"><img src="../assets/img/onepiece.png" alt="One Piece" width="150px" height="230"></a>
-                    <a class="explorar__img" href="./info.html"><img src="../assets/img/skeleton-knight.png" alt="Skeleton Knight" width="150px" height="230"></a>
-                    <a class="explorar__img" href="./info.html"><img src="../assets/img/spyxfamilyexp.png" alt="Spy x Family" width="150px" height="230"></a>
-                    <a class="explorar__img" href="./info.html"><img src="../assets/img/kaguya-sama1.png" alt="Kaguya-sama Love is War" width="150px" height="230"></a>
-                    <a class="explorar__img" href="./info.html"><img src="../assets/img/demonlord.png" alt="The Greatest Demond Lord" width="150px" height="230"></a>
-                    <a class="explorar__img" href="./info.html"><img src="../assets/img/thedawnofthewitch.png" alt="The Dawn Of The Witch" width="150px" height="230"></a>
+                    <div class="card">
+                        <img src="../assets/img/shield-hero2.png" class="card-img-top" alt="Shield Hero 2">
+                        <div class="card-body">
+                            <p class="card-text">Shield Hero 2</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/onepiece.png" class="card-img-top" alt="One Piece">
+                        <div class="card-body">
+                            <p class="card-text">One Piece</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/skeleton-knight.png" class="card-img-top" alt="Skeleton Knight">
+                        <div class="card-body">
+                            <p class="card-text">Skeleton Knight</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/spyxfamilyexp.png" class="card-img-top" alt="Spy x Family">
+                        <div class="card-body">
+                            <p class="card-text">Spy x Family</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/kaguya-sama1.png" class="card-img-top" alt="Kaguya-sama Love is War">
+                        <div class="card-body">
+                            <p class="card-text">Kaguya-sama Love is War</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/demonlord.png" class="card-img-top" alt="The Greatest Demond Lord">
+                        <div class="card-body">
+                            <p class="card-text">The Greatest Demond Lord</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/thedawnofthewitch.png" class="card-img-top" alt="The Dawn Of The Witch">
+                        <div class="card-body">
+                            <p class="card-text">The Dawn Of The Witch</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div data-aos="zoom-in-up" class="explorar__imgs">
                     <h3 class="explorar__titulo">Mas Reciente</h3>
                     <img class="explorar__divisor" src="../assets/img/divisor.png" alt="divisor">
-                    <a class="explorar__img" href=""><img src="../assets/img/acoupleofcukoos.png" alt="A couple of Cukoos" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/extreme-hearts.png" alt="Extreame Hearts" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/engage-kiss.png" alt="Engage Kiss" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/licorys-recoil.png" alt="Licorys Recoil" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/musasi-no.png" alt="Musasi-no" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/shoot.png" alt="Shoot!" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/detective-conan.png" alt="Detective Conan" width="150px" height="230"></a>
+                    <div class="card">
+                        <img src="../assets/img/acoupleofcukoos.png" class="card-img-top" alt="A couple of Cukoos">
+                        <div class="card-body">
+                            <p class="card-text">A couple of Cukoos</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/extreme-hearts.png" class="card-img-top" alt="Extreame Hearts">
+                        <div class="card-body">
+                            <p class="card-text">Extreame Hearts</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/engage-kiss.png" class="card-img-top" alt="Engage Kiss">
+                        <div class="card-body">
+                            <p class="card-text">Engage Kiss</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/licorys-recoil.png" class="card-img-top" alt="Licorys Recoil">
+                        <div class="card-body">
+                            <p class="card-text">Licorys Recoil</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/musasi-no.png" class="card-img-top" alt="Musasi-no">
+                        <div class="card-body">
+                            <p class="card-text">Musasi-no</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/shoot.png" class="card-img-top" alt="Shoot!">
+                        <div class="card-body">
+                            <p class="card-text">Shoot!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/detective-conan.png" class="card-img-top" alt="Detective Conan">
+                        <div class="card-body">
+                            <p class="card-text">Detective Conan</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div data-aos="zoom-in-up" class="explorar__imgs">
                     <h3 class="explorar__titulo">No te los podes perder</h3>
                     <img class="explorar__divisor" src="../assets/img/divisor.png" alt="divisor">
-                    <a class="explorar__img" href=""><img src="../assets/img/mashoku-tensei.png" alt="Mahoku Tensei" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/kono-suba2.png" alt="Kono Suba 2" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/darling-in-the-franxx.png" alt="Darling in the Franxx" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/my-dress-up-darling.png" alt="My Dress Up Darling" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/naruto-shippuden.png" alt="Naruto Shippuden" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/bleach.png" alt="Bleach" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/mob-psycho-100.png" alt="Mob Psycho 100" width="150px" height="230"></a>
+                    <div class="card">
+                        <img src="../assets/img/mashoku-tensei.png" class="card-img-top" alt="Mahoku Tensei">
+                        <div class="card-body">
+                            <p class="card-text">Mahoku Tensei</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/kono-suba2.png" class="card-img-top" alt="Kono Suba 2">
+                        <div class="card-body">
+                            <p class="card-text">Kono Suba 2</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/darling-in-the-franxx.png" class="card-img-top" alt="Darling in the Franxx">
+                        <div class="card-body">
+                            <p class="card-text">Darling in the Franxx</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/my-dress-up-darling.png" class="card-img-top" alt="My Dress Up Darling">
+                        <div class="card-body">
+                            <p class="card-text">My Dress Up Darling</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/naruto-shippuden.png" class="card-img-top" alt="Naruto Shippuden">
+                        <div class="card-body">
+                            <p class="card-text">Naruto Shippuden</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/bleach.png" class="card-img-top" alt="Bleach">
+                        <div class="card-body">
+                            <p class="card-text">Bleach</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/mob-psycho-100.png" class="card-img-top" alt="Mob Psycho 100">
+                        <div class="card-body">
+                            <p class="card-text">Mob Psycho 100</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div data-aos="zoom-in-up" class="explorar__imgs">
                 <h3 class="explorar__titulo">Lo mas visto en 2021</h3>
                     <img class="explorar__divisor" src="../assets/img/divisor.png" alt="divisor">
-                    <a class="explorar__img" href=""><img src="../assets/img/attack-on-titan.png" alt="Attack on Titan Final Season" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/Slime.png" alt="That Time I Got Reincarned as a Slime" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/my-hero-academia.png" alt="My Hero Academia" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/dr-stone.png" alt="Dr.Stone Stone Wars" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/haikyu.png" alt="Haikyu!!" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/my-teen-romantic-comedy.png" alt="My Teen Romantic Comedy" width="150px" height="230"></a>
-                    <a class="explorar__img" href=""><img src="../assets/img/jujutsu-kaisen.png" alt="Jujutsu Kaisen" width="150px" height="230"></a>
+                    <div class="card">
+                        <img src="../assets/img/attack-on-titan.png" class="card-img-top" alt="Attack on Titan Final Season">
+                        <div class="card-body">
+                            <p class="card-text">Attack on Titan Final Season</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/Slime.png" class="card-img-top" alt="That Time I Got Reincarned as a Slime">
+                        <div class="card-body">
+                            <p class="card-text">That Time I Got Reincarned as a Slime</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/my-hero-academia.png" class="card-img-top" alt="My Hero Academia">
+                        <div class="card-body">
+                            <p class="card-text">My Hero Academia</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/dr-stone.png" class="card-img-top" alt="Dr.Stone Stone Wars">
+                        <div class="card-body">
+                            <p class="card-text">Dr.Stone Stone Wars</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/haikyu.png" class="card-img-top" alt="Haikyu!!">
+                        <div class="card-body">
+                            <p class="card-text">Haikyu!!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/my-teen-romantic-comedy.png" class="card-img-top" alt="My Teen Romantic Comedy">
+                        <div class="card-body">
+                            <p class="card-text">My Teen Romantic Comedy</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/jujutsu-kaisen.png" class="card-img-top" alt="Jujutsu Kaisen">
+                        <div class="card-body">
+                            <p class="card-text">Jujutsu Kaisen</p>
+                        </div>
+                    </div>
                 </div>
         </main>
 
@@ -99,7 +251,7 @@
             </div>
         </footer>
 
-        <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>

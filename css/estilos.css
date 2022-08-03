@@ -10,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.body01{
     background-color: rgb(19, 19, 19);
 }
 /*Medidas*/
@@ -20,19 +20,24 @@ html{
 /*Barra de navegacion*/
 .navegacion{
     width: 100%;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .navbar{
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 15px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.navbar-collapse{
+    flex-grow: inherit;
+    margin-right: 11%;
+}
+.container-fluid{
+    margin-left: 11%;
 }
 .logo{
     width: 100%;
@@ -369,11 +374,29 @@ nav ul li a{
     margin: 10px auto;
     padding: 10px 0;
 }
-.explorar__img:hover{
+.card:hover{
     transform: scale(1.1);
 }
-.explorar__img{
+.card{
+    background-color: rgb(19, 19, 19);
     transition: transform .5s;
+    padding-bottom: 5px;
+}
+.card-text{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+}
+.card-body{
+    width: 150px;
+    height: 90px;
+}
+.card-img-top{
+    width: 150px;
+    height: 230px;
 }
 .explorar__divisor{
     width: 100%;
@@ -455,7 +478,6 @@ nav ul li a{
 .slider_recomendaciones img{
     width: 100%;
 }
-
 /*Info*/
 .title-info{
     text-align: center;

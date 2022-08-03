@@ -5,55 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
-    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Icono de la marca-->
     <link rel="shortcut icon" href="../assets/icons/logo.png" type="image/x-icon"><!--En el # va la imagen q tenga guardada en la carpeta-->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>AnimeInfo-Reomendaciones</title>
 </head>
-<body>
-    <nav class="navegacion">
-        <div class="navbar">
-        <a href="../index.html">
-            <img src="../assets/icons/logo.png" alt="logo-animeinfo" width="50px">
-        </a>
-        <!--Links a mis paginas-->
-        <!--Listas desordenada-->
-            <ul>
-            <!--Enlaces Relativos-->
-                <!--<li><a href="../index.html">Inicio</a></li>-->
-                <li><a href="./explorar.html">Explorar</a></li>
-                <li><a href="./noticias.html">Noticas</a></li>
-                <li><a href="./reomendaciones.html">Recomendaciones</a></li>
-                <li><a href="./info.html">Info</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+<body class="body01">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/icons/logo.png" class="logo-nav" alt="logo-animeinfo" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./explorar.html">Explorar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./reomendaciones.html">Recomendaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./info.html">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <main>
-        <section>
-            <div class="slider_recomendaciones">
-                <ul>
-                    <li id="slide5"><a href=""><img class="banner" src="../assets/img/classroom-banner.png" alt="Classroom Banner"></a></li>
-                    <li id="slide6"><a href=""><img class="banner" src="../assets/img/the-prince-banner.png" alt="My Stepmom's Daughter Is My Ex"></a></li>
-                    <li id="slide7"><a href=""><img class="banner" src="../assets/img/my-stepmother.png" alt="Classroom Banner"></a></li>
-                    <li id="slide8"><a href=""><img class="banner" src="../assets/img/yakuza-banner.png" alt="Classroom Banner"></a></li>
-                </ul>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
-        </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/classroom-banner.png" class="d-block w-100" alt="Classroom Banner">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/the-prince-banner.png" class="d-block w-100" alt="The Prince">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/my-stepmother.png" class="d-block w-100" alt="My Stepmom's Daughter Is My Ex">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/yakuza-banner.png" class="d-block w-100" alt="Yakuza">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
         <div data-aos="fade-right" class="explorar__imgs">
             <h3 class="explorar__titulo">Nuestras Recomendaciones</h3>
             <img class="explorar__divisor" src="../assets/img/divisor.png" alt="divisor">
-            <a class="explorar__img" href=""><img src="../assets/img/the-last-summoner.png" alt="The Last Summoner" width="150px" height="230"></a>
-            <a class="explorar__img" href=""><img src="../assets/img/rwby.png" alt="RWBY: Ice Queendom" width="150px" height="230"></a>
-            <a class="explorar__img" href=""><img src="../assets/img/love-of-kill.png" alt="Love Of Kill" width="150px" height="230"></a>
-            <a class="explorar__img" href=""><img src="../assets/img/fairy-tail.png" alt="Fairy Tail" width="150px" height="230"></a>
-            <a class="explorar__img" href=""><img src="../assets/img/kingdom.png" alt="Kingdom" width="150px" height="230"></a>
-            <a class="explorar__img" href=""><img src="../assets/img/virtual.png" alt="VIRTUALSAN - LOOKING" width="150px" height="230"></a>
-            <a class="explorar__img" href=""><img src="../assets/img/science.png" alt="Science Fell in Love, So I Tried to Prove it" width="150px" height="230"></a>
+            <div class="card">
+                <img src="../assets/img/the-last-summoner.png" class="card-img-top" alt="The Last Summone">
+                <div class="card-body">
+                    <p class="card-text">The Last Summone</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/rwby.png" class="card-img-top" alt="RWBY: Ice Queendom">
+                <div class="card-body">
+                    <p class="card-text">RWBY: Ice Queendom</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/love-of-kill.png" class="card-img-top" alt="Love Of Kill">
+                <div class="card-body">
+                    <p class="card-text">Love Of Kill</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/fairy-tail.png" class="card-img-top" alt="Fairy Tail">
+                <div class="card-body">
+                    <p class="card-text">Fairy Tail</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/kingdom.png" class="card-img-top" alt="Kingdom">
+                <div class="card-body">
+                    <p class="card-text">Kingdom</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/virtual.png" class="card-img-top" alt="VIRTUALSAN - LOOKING">
+                <div class="card-body">
+                    <p class="card-text">VIRTUALSAN - LOOKING</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/science.png" class="card-img-top" alt="Science Fell in Love, So I Tried to Prove it">
+                <div class="card-body">
+                    <p class="card-text">Science Fell in Love, So I Tried to Prove it</p>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -79,7 +143,7 @@
         </div>
     </footer>
 
-    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
