@@ -288,8 +288,6 @@ nav ul li a {
 }
 /*Contacto*/
 .body-contacto {
-  position: relative;
-  padding-bottom: 3em;
   min-height: 100vh;
   position: relative;
   padding-bottom: 3em;
@@ -302,6 +300,7 @@ nav ul li a {
   background-attachment: fixed;
   margin: 0;
   padding-bottom: 350px;
+  padding-top: 90px;
 }
 
 .contenedor .form .form-header .form-title {
@@ -533,8 +532,8 @@ nav ul li a {
 }
 
 .card-img-top {
-  width: 150px;
   height: 230px;
+  width: 150px;
 }
 
 .explorar__divisor {

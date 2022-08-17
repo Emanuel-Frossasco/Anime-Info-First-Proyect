@@ -3,7 +3,6 @@ $color-black: #000;
 $color-white: #fff;
 $color-navbar: #f29718;
 $color-orange: #ff851b;
-
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 /*@font-face {
@@ -26,6 +25,13 @@ html{
 main{
     padding-top: 100px;
 }
+$estilos: (
+    negro: rgba(0, 0, 0, .7),
+    borde: #ff851b,
+    blanco: #fff,
+
+);
+
 /*Barra de navegacion*/
 .navegacion{
     width: 100%;
@@ -139,7 +145,7 @@ nav ul li a{
 .contenedorNoti__titulo{
     font-family: 'Albert Sans', sans-serif;
     font-style: italic;
-    color: #fff;
+    color: $color-white;
     font-size: 30px;
 }
 .contenedorNoti__titulo1{
@@ -232,6 +238,7 @@ nav ul li a{
     background-attachment: fixed;
     margin: 0;
     padding-bottom: 350px;
+    padding-top: 90px;
 }
 .contenedor .form .form-header .form-title{
     font-weight: normal;
@@ -261,16 +268,16 @@ nav ul li a{
     position: relative;
 }
 .contenedor .form .form-input, .form-text{
-    background: rgba(0, 0, 0, .7);
+    background: map-get($estilos, negro);
     border: none;
     outline: none;
-    border-bottom: 2px solid #ff851b;
+    border-bottom: 2px solid map-get($estilos, borde);
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
     border-radius: 2px;
     font-size: 14px;
-    color: #fff;
+    color: map-get($estilos, blanco);
     font-family: 'Ubuntu', sans-serif;
 }
 .contenedor .form .form-text{
@@ -450,7 +457,8 @@ nav ul li a{
     height: 90px;
 }
 .card-img-top{
-    @include img-size(150px,230px);
+    height: 230px;
+    width: 150px;
 }
 .explorar__divisor{
     width: 100%;
