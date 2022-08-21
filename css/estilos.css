@@ -321,12 +321,13 @@ nav ul li a {
   margin-bottom: 25px;
   text-align: center;
 }
-.footer grupo-2 {
+.footer .grupo-2 {
   padding: 15px 10px;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
+
 
 .footer1 {
   width: 100%;
